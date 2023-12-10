@@ -65,11 +65,7 @@ body {
   display: flex;
   gap: 40px;
 }
-.menu-address {
-  color: #404bbf;
-  display: flex;
-  gap: 40px;
-}
+
 .logo {
   font-family: "Raleway", sans-serif;
   color: #4d5ae5;
@@ -167,13 +163,13 @@ body {
   height: 56px;
   border: none;
   border-radius: 4px;
-  font-family: "Roboto", sans-serif;
-  color: #ffffff;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.64px;
+  color:  #FFF;
+
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.5em;
+letter-spacing: 0.04em;
   cursor: pointer;
 
   margin-left: auto;
@@ -587,6 +583,7 @@ body {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-open {
+  
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
