@@ -48,8 +48,8 @@ body {
   max-width: 320px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /* =========== header =========== */
@@ -68,10 +68,10 @@ body {
 .container-header {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 .logo {
-  margin-right: 149px;
+  
   display: flex;
   align-items: center;
   color: #4d5ae5;
@@ -87,6 +87,7 @@ body {
   color: #2e2f42;
 }
 .mobile-menu-open {
+  margin-left: auto;
   background-color: transparent;
   border: none;
   margin: 0;
