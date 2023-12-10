@@ -65,7 +65,11 @@ body {
   display: flex;
   gap: 40px;
 }
-
+.menu-address {
+  color: #404bbf;
+  display: flex;
+  gap: 40px;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   color: #4d5ae5;
