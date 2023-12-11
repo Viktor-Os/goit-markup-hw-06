@@ -54,11 +54,6 @@ body {
 }
 /* #endregion stale */
 
-
-
-
-
-
 /* =========== header =========== */
 /* #region section header */
 .menu {
@@ -92,7 +87,6 @@ body {
   color: #2e2f42;
 }
 /* #endregion */
-
 
 /* ====== section hero ==== */
 /* #region section hero */
@@ -139,7 +133,6 @@ body {
   background-position: center;
 }
 /* #endregion */
-
 
 /* =========== BACKDROP MOBILE =========== */
 /* #region backdrop */
@@ -270,7 +263,7 @@ body {
 
 .form-checkbox {
   flex-shrink: 0;
-display: inline-flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-left: 0;
@@ -339,13 +332,43 @@ display: inline-flex;
 }
 /* #endregion backdrop */
 
+/* ===========section - 2 =========== */
+/* #region section - 2 */
+.section-two {
+  padding: 96px 0;
+}
 
+.section-block {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+.icon-list-style {
+  display: none;
+}
 
+.section-title {
+  text-align: center;
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1em;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+.text-title {
+  color: #434455;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+}
 
+/* #endregion */
 
 /* =========== header MOBILE ========== */
 /* #region header mobile */
-
 
 @media screen and (max-width: 768px) {
   .mobile-menu-open {
@@ -443,9 +466,9 @@ display: inline-flex;
   .mobile-social {
     fill: rgba(244, 244, 253, 1);
   }
-/* #endregion */
- 
-/* @@@ END HEADER @@@ */
+  /* #endregion */
+
+  /* @@@ END HEADER @@@ */
 
   /* ============ section - hero =========== */
   /* #region section header */
@@ -470,11 +493,19 @@ display: inline-flex;
   }
   /* #endregion section header */
 
+  /* ==========section -2 ======== */
+  /* #region section - 2 */
+
+  /* #endregion */
+  /* =========section - 3 ======== */
+  /* #region */
+  .section-foto {
+    display: flex;
+    flex-direction: column;
+  }
+  /* #endregion */
   /* =========== end header mobile ========== */
 }
-
-
-
 
 /* ============ header TABLET =========== */
 /* #region header tablet */
@@ -545,12 +576,12 @@ display: inline-flex;
     border-radius: 2px;
     background-color: #404bbf;
   }
-/* #endregion */
+  /* #endregion */
 
   /* @@@ END HEADER @@@ */
- 
+
   /* ============ section - 1 =========== */
- 
+
   /* #region section -1 tablet */
   .section-hero {
     background-image: linear-gradient(
@@ -581,29 +612,40 @@ display: inline-flex;
   .button-order {
     margin-top: 36px;
   }
-    /* #endregion */
- 
-    /* -----------END----------  */
-  
-  /* #region section -2 tablet */
-  
   /* #endregion */
-  
+
+  /* -----------END----------  */
+
+  /* #region section -2 tablet */
+
+  .section-block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 72px 24px;
+  }
+
+  .section-list {
+    display: flex;
+    width: 356px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  /* #endregion */
+
   /* ------------END---------- */
 
   /* @@@@ end header tablet @@@ */
 }
-
-
-
-
-
 
 /* ========== header DESCTOP =========== */
 /* #region header desctop */
 @media screen and (min-width: 1158px) {
   .container {
     min-width: 1158px;
+    padding-left: 15px;
+  padding-right: 15px;
   }
   .menu {
     margin-left: 76px;
@@ -658,8 +700,60 @@ display: inline-flex;
   .button-order {
     margin-top: 48px;
   }
-    /* #endregion */
+  /* #endregion */
+ 
+  .section-two {
+    padding: 120px 0;
+   
+  }
+ 
+  .section-list {
+    margin-bottom: 8px;
+    width: calc((100% - 72px) / 4);
+  }
+  .section-title {
 
+
+    display: flex;
+    align-items: flex-start;
+    font-size: 20px;
+    font-weight: 500;
+    width: 264px;
+  }
+.text-title {
+/* letter-spacing: 0.01em; */
+
+font-weight: 400;
+
+
+}
+  .icon-list-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    background: #f4f4fd;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+  }
+  .antenna {
+    fill: #2e2f42;
+  }
+  .astronaut {
+    fill: #4d5ae5;
+  }
+  .clock {
+    fill: #4d5ae5;
+  }
+  .diagram {
+    fill: #4d5ae5;
+  }
+  .icon-list {
+    margin: 24px 100px;
+  }
   /* @@@ END HEADER @@@ */
 }
 /* ========== header desctop =========== */
