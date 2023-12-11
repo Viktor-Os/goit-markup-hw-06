@@ -42,7 +42,7 @@
             </li>
           </ul>
         </nav>
-        <button class="mobile-menu-open " type="button">
+        <button class="mobile-menu-open" type="button">
           <svg
             class="mobile-menu-icon"
             width="24"
@@ -76,7 +76,7 @@
     <main>
       <!-- #region section-1 -->
       <!-- ========== section - 1 ========== -->
-      
+
       <section class="section-hero">
         <div class="container">
           <h1 class="title">Effective Solutions for Your Business</h1>
@@ -647,7 +647,7 @@
     <!-- #endregion footer -->
     <!-- #region backdrop  -->
     <!-- =========== backdrop ============= -->
-    <div class="backdrop is-open">
+    <div class="backdrop is-opn">
       <div class="modal">
         <button class="modal-icon-click" type="button">
           <svg class="modal-icon" width="8" height="8" aria-label="close icon">
@@ -659,8 +659,8 @@
         </button>
         <p class="form-list">leave your contacts and we will call you back</p>
         <form class="review-form">
-    <!-- =========== NAME============ -->
-    <div class="review-form-list">
+          <!-- =========== NAME============ -->
+          <div class="review-form-list">
             <label class="form-hint" for="user-name">Name</label>
             <div class="review-form-input">
               <input
@@ -682,8 +682,8 @@
               </svg>
             </div>
           </div>
-    <!-- ============ PHONE ============ -->
-    <div class="review-form-list">
+          <!-- ============ PHONE ============ -->
+          <div class="review-form-list">
             <label class="form-hint" for="user-tel">Phone</label>
             <div class="review-form-input">
               <input
@@ -701,8 +701,8 @@
               </svg>
             </div>
           </div>
-    <!-- ============ EMAIL ============ -->
-    <div class="review-form-list">
+          <!-- ============ EMAIL ============ -->
+          <div class="review-form-list">
             <label class="form-hint" for="user-email">Email</label>
             <div class="review-form-input">
               <input
@@ -722,8 +722,8 @@
               </svg>
             </div>
           </div>
-    <!-- ============ COMMENT ============ -->
-    <div class="review-form-list review-list">
+          <!-- ============ COMMENT ============ -->
+          <div class="review-form-list review-list">
             <label class="form-hint" for="user-comment">Comment</label>
             <textarea
               class="form-comments"
@@ -733,8 +733,8 @@
               required
             ></textarea>
           </div>
-    <!-- ============ CHECKBOX ============ -->
-    <div class="review-form-checkbox">
+          <!-- ============ CHECKBOX ============ -->
+          <div class="review-form-checkbox">
             <input
               class="form-input-checkbox visually-hidden"
               id="user-privacy"
@@ -757,8 +757,10 @@
                   ></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-                <a class="paragraph-click-link" href="">Privacy Policy</a></label
+              <span class="checkbox-text">
+                I accept the terms and conditions of the
+                <a class="paragraph-click-link" href="">Privacy Policy</a></span
+              ></label
             >
           </div>
           <button class="form-submit" type="submit">Send</button>
@@ -768,76 +770,100 @@
     <!-- #endregion backdrop  -->
     <!-- =========== mobile menu -->
     <!-- возобновити open -->
-    <div class="mobile-menu-wrapper is-opn"> 
-    <div class="container mobile-menu-container">
-      <button class="mobile-menu-btn" type="button">
-        <svg
-          class="mobile-menu-click"
-          width="8"
-          height="8"
-          aria-label="mobile menu close"
-        >
-          <use
-            class="mobile-menu-click-icon"
-            href="./images/icons.svg#icon-close-black-18dp-2-1"
-          ></use>
-        </svg>
-      </button>
-      <nav class="mobile-menu-navigation">
-        <ul class="mobile-menu-navigation-list">
-          <li class="mobile-menu-list">
-          <a class="mobile-menu-link" href="">Studio</a>
-          </li>
-          <li class="mobile-menu-list">
-          <a class="mobile-menu-link" href="">Portfolio</a>
-          </li>
-          <li class="mobile-menu-list">
-          <a class="mobile-menu-link" href="">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <address class="mobile-address">
-        <ul class="mobile-address-list">
-          <li class="mobile-address-phone-and-email">
-            <a class="mobile-address-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-          </li>
-          <li class="mobile-address-phone-and-email">
-            <a class="mobile-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-        </ul>
-      </address>
+    <div class="mobile-menu-wrapper is-opn">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-btn" type="button">
+          <svg
+            class="mobile-menu-click"
+            width="8"
+            height="8"
+            aria-label="mobile menu close"
+          >
+            <use
+              class="mobile-menu-click-icon"
+              href="./images/icons.svg#icon-close-black-18dp-2-1"
+            ></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-navigation">
+          <ul class="mobile-menu-navigation-list">
+            <li class="mobile-menu-list">
+              <a class="mobile-menu-link" href="">Studio</a>
+            </li>
+            <li class="mobile-menu-list">
+              <a class="mobile-menu-link" href="">Portfolio</a>
+            </li>
+            <li class="mobile-menu-list">
+              <a class="mobile-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mobile-address">
+          <ul class="mobile-address-list">
+            <li class="mobile-address-phone-and-email">
+              <a class="mobile-address-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-address-phone-and-email">
+              <a class="mobile-address-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
 
-      <ul class="mobile-social-list">
-        <li class="mobile-our-social">
-          <a href="" class="mobile-our-social-link">
-            <svg class="mobile-social" width="24" height="24" aria-label="instagram">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="mobile-our-social">
-          <a href="" class="mobile-our-social-link">
-            <svg class="mobile-social" width="24" height="24" aria-label="twitter">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="mobile-our-social">
-          <a href="" class="mobile-our-social-link">
-            <svg class="mobile-social" width="24" height="24" aria-label="facebook">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="mobile-our-social">
-          <a href="" class="mobile-our-social-link">
-            <svg class="mobile-social" width="24" height="24" aria-label="linkedin">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
+        <ul class="mobile-social-list">
+          <li class="mobile-our-social">
+            <a href="" class="mobile-our-social-link">
+              <svg
+                class="mobile-social"
+                width="24"
+                height="24"
+                aria-label="instagram"
+              >
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-our-social">
+            <a href="" class="mobile-our-social-link">
+              <svg
+                class="mobile-social"
+                width="24"
+                height="24"
+                aria-label="twitter"
+              >
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-our-social">
+            <a href="" class="mobile-our-social-link">
+              <svg
+                class="mobile-social"
+                width="24"
+                height="24"
+                aria-label="facebook"
+              >
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-our-social">
+            <a href="" class="mobile-our-social-link">
+              <svg
+                class="mobile-social"
+                width="24"
+                height="24"
+                aria-label="linkedin"
+              >
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

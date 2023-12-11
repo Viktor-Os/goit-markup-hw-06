@@ -1,3 +1,4 @@
+/* #region style */
 button {
   cursor: pointer;
 }
@@ -51,9 +52,15 @@ body {
   padding-left: 16px;
   padding-right: 16px;
 }
+/* #endregion stale */
+
+
+
+
+
 
 /* =========== header =========== */
-
+/* #region section header */
 .menu {
   display: none;
 }
@@ -84,7 +91,11 @@ body {
 .logo-studio {
   color: #2e2f42;
 }
+/* #endregion */
+
+
 /* ====== section hero ==== */
+/* #region section hero */
 .button-order {
   display: block;
   padding: 16px 32px;
@@ -127,8 +138,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+/* #endregion */
+
+
 /* =========== BACKDROP MOBILE =========== */
 /* #region backdrop */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -141,8 +156,8 @@ body {
   visibility: hidden;
   pointer-events: none;
 
-  /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-open {
   opacity: 1;
@@ -150,7 +165,6 @@ body {
   pointer-events: auto;
 }
 .modal {
-  
   position: absolute;
   top: 50%;
   left: 50%;
@@ -161,9 +175,9 @@ body {
   background: #fcfcfc;
 
   padding: 72px 16px 24px 16px;
-  /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-icon-click {
   display: flex;
@@ -237,13 +251,102 @@ body {
   padding: 8px 16px;
   outline: 0px solid transparent;
   resize: none;
-
 }
 .form-comments::placeholder {
   color: rgba(46, 47, 66, 0.4);
 }
+/* ============ CHECKBOX ============ */
+.review-form-checkbox {
+  margin-bottom: 24px;
+}
+.form-label-checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.17em;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.form-checkbox {
+  flex-shrink: 0;
+display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
+}
+
+.form-input-checkbox:checked + .form-label-checkbox > .form-checkbox {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+.form-icon-clicks-checkbox {
+  fill: #f4f4fd;
+  opacity: 0;
+}
+.form-input-checkbox:checked + .form-label-checkbox .form-icon-clicks-checkbox {
+  opacity: 1;
+}
+.form-input-checkbox:focus + .form-label-checkbox > .form-checkbox {
+  outline: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.paragraph-click-link {
+  color: #4d5ae5;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.33em;
+  letter-spacing: 0.04em;
+  text-decoration-line: underline;
+}
+
+.form-submit {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  margin-top: 24px;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-submit:hover,
+.form-submit:focus {
+  background-color: rgba(64, 75, 191, 1);
+}
 /* #endregion backdrop */
-/* =========== header mobile ========== */
+
+
+
+
+
+/* =========== header MOBILE ========== */
+/* #region header mobile */
+
+
 @media screen and (max-width: 768px) {
   .mobile-menu-open {
     margin-left: auto;
@@ -340,9 +443,12 @@ body {
   .mobile-social {
     fill: rgba(244, 244, 253, 1);
   }
+/* #endregion */
+ 
+/* @@@ END HEADER @@@ */
 
-  /* ----------- END HEADER ----------- */
   /* ============ section - hero =========== */
+  /* #region section header */
   .section-hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -362,10 +468,16 @@ body {
         url("../images/hero/people-office@2x.jpg");
     }
   }
+  /* #endregion section header */
 
   /* =========== end header mobile ========== */
 }
-/* ============ header tablet =========== */
+
+
+
+
+/* ============ header TABLET =========== */
+/* #region header tablet */
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -433,9 +545,13 @@ body {
     border-radius: 2px;
     background-color: #404bbf;
   }
+/* #endregion */
 
-  /* ----------- END HEADER ----------- */
+  /* @@@ END HEADER @@@ */
+ 
   /* ============ section - 1 =========== */
+ 
+  /* #region section -1 tablet */
   .section-hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -465,10 +581,26 @@ body {
   .button-order {
     margin-top: 36px;
   }
+    /* #endregion */
+ 
+    /* -----------END----------  */
+  
+  /* #region section -2 tablet */
+  
+  /* #endregion */
+  
+  /* ------------END---------- */
 
-  /* ========== end header tablet =========== */
+  /* @@@@ end header tablet @@@ */
 }
-/* ========== header desctop =========== */
+
+
+
+
+
+
+/* ========== header DESCTOP =========== */
+/* #region header desctop */
 @media screen and (min-width: 1158px) {
   .container {
     min-width: 1158px;
@@ -496,7 +628,11 @@ body {
   .link-contact:focus {
     color: #404bbf;
   }
+  /* #endregion */
+
+  /* ---------END------- */
   /* ===========section hero ============ */
+  /* #region section hero desctop */
   .section-hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -522,6 +658,8 @@ body {
   .button-order {
     margin-top: 48px;
   }
-  /* ----------- END HEADER ------------ */
+    /* #endregion */
+
+  /* @@@ END HEADER @@@ */
 }
 /* ========== header desctop =========== */
