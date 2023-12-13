@@ -54,7 +54,7 @@ body {
 }
 /* #endregion stale */
 
-/* =========== header =========== */
+/* -----------------END-------------- */
 /* #region section header */
 .menu {
   display: none;
@@ -88,7 +88,7 @@ body {
 }
 /* #endregion */
 
-/* ====== section hero ==== */
+/* -----------------END--------------*/
 /* #region section hero */
 .button-order {
   display: block;
@@ -134,7 +134,7 @@ body {
 }
 /* #endregion */
 
-/* =========== BACKDROP MOBILE =========== */
+/* -----------------END-------------- */
 /* #region backdrop */
 
 .backdrop {
@@ -332,8 +332,9 @@ body {
 }
 /* #endregion backdrop */
 
-/* ===========section - 2 =========== */
+/* -----------------END-------------- */
 /* #region section - 2 */
+
 .section-two {
   padding: 96px 0;
 }
@@ -367,8 +368,98 @@ body {
 
 /* #endregion */
 
-/* =========== header MOBILE ========== */
-/* #region header mobile */
+/* -----------------END-------------- */
+/* #region section -3 */
+.section-three {
+  padding: 96px 0;
+  display: flex;
+  background: #f4f4fd;
+}
+
+.section-pictures {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 72px;
+}
+.section-three-title {
+  color: #2e2f42;
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11em;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+
+  padding-bottom: 72px;
+}
+.section-foto {
+  background: #fff;
+}
+.section-list-foto {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container-name {
+  padding: 32px 0;
+}
+.name {
+  color: #2e2f42;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.type-of-employment {
+  color: #434455;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+/* --------icon------- */
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.our-social {
+  width: 40px;
+  height: 40px;
+}
+.our-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social {
+  fill: #f4f4fd;
+}
+
+.our-social-link:focus {
+  background-color: #404bbf;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* #endregion */
+
+/* -----------------END-------------- */
+/* =========== MOBILE STYLE ========== */
+
+/* #region header mobile media */
 
 @media screen and (max-width: 768px) {
   .mobile-menu-open {
@@ -468,10 +559,9 @@ body {
   }
   /* #endregion */
 
-  /* @@@ END HEADER @@@ */
+  /* --------------END----------- */
 
-  /* ============ section - hero =========== */
-  /* #region section header */
+  /* #region section hero*/
   .section-hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -493,22 +583,18 @@ body {
   }
   /* #endregion section header */
 
-  /* ==========section -2 ======== */
+  /* -------------END-------------- */
+
   /* #region section - 2 */
 
   /* #endregion */
-  /* =========section - 3 ======== */
-  /* #region */
-  .section-foto {
-    display: flex;
-    flex-direction: column;
-  }
-  /* #endregion */
-  /* =========== end header mobile ========== */
+
+  /* --------------END------------- */
 }
 
-/* ============ header TABLET =========== */
-/* #region header tablet */
+/* ============ TABLET STYLE =========== */
+
+/* #region header tablet media */
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -578,9 +664,7 @@ body {
   }
   /* #endregion */
 
-  /* @@@ END HEADER @@@ */
-
-  /* ============ section - 1 =========== */
+  /* ------------------END------------- */
 
   /* #region section -1 tablet */
   .section-hero {
@@ -619,7 +703,6 @@ body {
   /* #region section -2 tablet */
 
   .section-block {
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 72px 24px;
@@ -635,17 +718,31 @@ body {
   /* #endregion */
 
   /* ------------END---------- */
+  /* #region section - 3 tablet*/
+  .section-pictures {
+    justify-content: center;
 
-  /* @@@@ end header tablet @@@ */
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 64px 24px;
+  }
+  /* #endregion */
+
+  /* -------------END------------ */
+  /* #region section -4*/
+
+  /* #endregion */
+
+  /* -----------------END-------------- */
 }
 
-/* ========== header DESCTOP =========== */
-/* #region header desctop */
+/* ========== DESCTOP STYLE =========== */
+/* #region header desctop media*/
 @media screen and (min-width: 1158px) {
   .container {
     min-width: 1158px;
     padding-left: 15px;
-  padding-right: 15px;
+    padding-right: 15px;
   }
   .menu {
     margin-left: 76px;
@@ -672,8 +769,7 @@ body {
   }
   /* #endregion */
 
-  /* ---------END------- */
-  /* ===========section hero ============ */
+  /* --------------END-------------- */
   /* #region section hero desctop */
   .section-hero {
     background-image: linear-gradient(
@@ -701,32 +797,27 @@ body {
     margin-top: 48px;
   }
   /* #endregion */
- 
+
+  /* --------------END-------------- */
+  /* #region section - 2 */
   .section-two {
     padding: 120px 0;
-   
   }
- 
+
   .section-list {
     margin-bottom: 8px;
     width: calc((100% - 72px) / 4);
   }
   .section-title {
-
-
     display: flex;
     align-items: flex-start;
     font-size: 20px;
     font-weight: 500;
     width: 264px;
   }
-.text-title {
-/* letter-spacing: 0.01em; */
-
-font-weight: 400;
-
-
-}
+  .text-title {
+    font-weight: 400;
+  }
   .icon-list-style {
     display: flex;
     align-items: center;
@@ -754,6 +845,34 @@ font-weight: 400;
   .icon-list {
     margin: 24px 100px;
   }
-  /* @@@ END HEADER @@@ */
+  /* #endregion */
+
+  /* --------------END------------- */
+  /* #region section - 3 */
+  .section-three {
+    padding: 120px 0;
+  }
+  .section-three-title {
+    font-size: 36px;
+    line-height: 1.11em;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+  }
+  .section-foto {
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  }
+
+  /* #endregion */
+
+  /* ---------------END------------ */
+  /* #region section - 4 */
+  
+  /* #endregion */
+  /* ---------------END-------------*/
 }
-/* ========== header desctop =========== */
+
