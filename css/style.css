@@ -397,6 +397,9 @@ body {
 }
 .section-foto {
   background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .section-list-foto {
   display: block;
@@ -457,6 +460,60 @@ body {
 /* #endregion */
 
 /* -----------------END-------------- */
+/* #region section - 4 */
+
+.section-portfolio {
+  padding: 96px 0;
+  background: #fff;
+}
+.title-portfolio {
+  color: #2e2f42;
+  text-align: center;
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11em;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.portfolio-list-foto {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 48px;
+}
+.container-portfolio {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  background: var(--WHITE, #fff);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.portfolio-name {
+  color: #2e2f42;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+.job-title {
+  color: #434455;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+}
+/* #endregion */
+/* -----------------END-------------- */
+
 /* =========== MOBILE STYLE ========== */
 
 /* #region header mobile media */
@@ -585,8 +642,10 @@ body {
 
   /* -------------END-------------- */
 
-  /* #region section - 2 */
-
+  /* #region section - 4 */
+  .overlay-text {
+    display: none;
+  }
   /* #endregion */
 
   /* --------------END------------- */
@@ -730,7 +789,16 @@ body {
 
   /* -------------END------------ */
   /* #region section -4*/
+  .overlay-text {
+    display: none;
+  }
+  .portfolio-list-foto {
+    justify-content: center;
 
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 72px 24px;
+  }
   /* #endregion */
 
   /* -----------------END-------------- */
@@ -770,14 +838,16 @@ body {
   /* #endregion */
 
   /* --------------END-------------- */
-  /* #region section hero desctop */
+  /* #region section hero */
   .section-hero {
+    max-width: 1440px;
+    padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/desctop-office.jpg);
-    padding: 112px 0;
+    
   }
   @media screen and (min-resolution: 192dpi) and (min-width: 1158px),
     screen and (min-resolution: 2ddpx) and (min-width: 1158px),
@@ -871,8 +941,47 @@ body {
 
   /* ---------------END------------ */
   /* #region section - 4 */
-  
+  .portfolio-row {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    overflow: hidden;
+
+    width: 350px;
+    width: calc((100% - 48px) / 3);
+  }
+  .overlay {
+    overflow: hidden;
+    position: relative;
+  }
+  .overlay-text {
+    display: flex;
+    position: absolute;
+    top: 0;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    background-color: #4d5ae5;
+    width: 100%;
+    height: 100%;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+  }
+  .portfolio-row:hover .overlay-text {
+    transform: translateY(0%);
+  }
+  .portfolio-row:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+  .section-portfolio {
+    padding: 120px 0;
+  }
+  .portfolio-list-foto {
+    gap: 48px 24px;
+    transform: translateY(0);
+  }
   /* #endregion */
   /* ---------------END-------------*/
 }
-
