@@ -584,8 +584,6 @@ body {
   border-radius: 50%;
 }
 
-
-
 .icon-stale-footer {
   fill: #f4f4fd;
 }
@@ -1184,11 +1182,11 @@ body {
   .text-footer {
     margin-bottom: 0;
   }
- .footer-link:hover,
-.footer-link:focus {
-  background-color: #31d0aa;
-}
-  
+  .footer-link:hover,
+  .footer-link:focus {
+    background-color: #31d0aa;
+  }
+
   /* #endregion */
 
   /* -----------------END-------------- */
